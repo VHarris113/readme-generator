@@ -19,6 +19,16 @@ inquirer
         },
         {
             type: 'input',
+            name: 'link',
+            message: 'What is the link to your repo?',
+        },
+        {
+            type: 'input',
+            name: 'link',
+            message: 'What is the link to your deployed site?',
+        },
+        {
+            type: 'input',
             name: 'steps',
             message: 'How do you use it?',
         },
@@ -62,8 +72,6 @@ inquirer
     ])
 
     // console.log(inquirer);
-
-//10. Support features?
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
