@@ -80,16 +80,17 @@ inquirer
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeToFile(fileName, data, err => {
+fs.writeToFile(fileName, data, err => {
         if (err) {
             return console.log(err);
         }
-        console.log("Here is your completed ReadMe!")
+        console.log("Hooray! Your README is complete!")
     });
 }
 
-// TODO: Create a function to initialize app
-function init() {}
+const writeFileAsync = util.promisify(writeToFile);
 
+// // TODO: Create a function to initialize app
+function init();
 // Function call to initialize app
 init();
