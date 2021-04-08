@@ -2,7 +2,49 @@
 const markdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
+const license = require('license');
+const util = require('utils');
 // TODO: Create an array of questions for user input
+const generateReadme = (answers) => `
+# Title: ${answers.title}
+
+# Description
+${answers.description}
+${answers.picture}
+
+# Repo Link
+${answers.repo}
+
+# Deployed Site Link
+${answers.link}
+
+# How to Use It
+${answers.steps}
+
+# Installation
+${answers.installation}
+
+# Production
+${answers.production}
+
+# Languages
+${answers.languages}
+
+# License
+${answers.license}
+
+# Future Project Releases
+${answers.future}
+
+# Support Information
+${answers.support}
+
+# Contributors
+${answers.contributors}
+
+# Acknowledgements
+${answers.acknowlegements}
+`;
 
 inquirer
     .prompt([
@@ -18,7 +60,12 @@ inquirer
         },
         {
             type: 'input',
-            name: 'link',
+            name: 'picture',
+            message: 'Do you have a picture or video link to your app?'
+        },
+        {
+            type: 'input',
+            name: 'repo',
             message: 'What is the link to your repo?',
         },
         {
@@ -76,21 +123,23 @@ inquirer
         }
     ])
 
-    // console.log(inquirer);
+
+    .then((answers) => {
+        const readmePageContent = generateReadme(answers);
+        fs.writeToFile('README.md', readmePageContent, err => 
+        err ? console.log(err) : console.log("Congratulations! Your README is now complete!")
+    )});
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-fs.writeToFile(fileName, data, err => {
-        if (err) {
-            return console.log(err);
-        }
-        console.log("Hooray! Your README is complete!")
-    });
-}
 
-const writeFileAsync = util.promisify(writeToFile);
 
-// // TODO: Create a function to initialize app
-function init();
-// Function call to initialize app
-init();
+// const writeFileAsync = util.promisify(writeToFile)
+
+// // // TODO: Create a function to initialize app
+// function init(); {
+//     try {
+//         const answers = await questions();
+//     }
+// }
+// // Function call to initialize app
+// init();
