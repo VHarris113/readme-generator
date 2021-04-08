@@ -98,7 +98,7 @@ inquirer
             type: 'list',
             name: 'license',
             message: 'Choose the correct license for this app:',
-            choices: ['ISC', 'MIT', 'Mozilla', 'Open'],
+            choices: ['ISC', 'MIT', 'Mozilla'],
         },
         {
             type: 'input',

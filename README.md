@@ -1,25 +1,21 @@
 
-# Title: ReadMe Generator
+# Title: Readme Generator
 
 # Description
-```md
-It generates a readme for those who created a new application. This will quicken the process of creating the app without having to worry about writing out the entire thing.
-```md
-![answers.title](okay);
+It generates new readmes
+![answers.title](https://drive.google.com/file/d/1-cSbFAX5m9eudxjAy9yGm_5tfFtMxCp4/view);
 
 # Repo Link
-[Repo](https://github.com/VHarris113/readme-generator.git)
+[Repo](Repo Link)
 
 # Deployed Site Link
-[Website](N/A)
+[Website](Site Link)
 
 # How to Use It
-You just answer the prompts accordingly.
+Like this
 
 # Installation
-```md
-git clone git@github.com:VHarris113/readme-generator.git
-```md
+Git hub clone
 
 # Production
 Yes
@@ -31,13 +27,13 @@ JavaScript
 ![badge](ISC)
 
 # Future Project Releases
-No
+Not at the moment
 
 # Support Information
-Please email me or reach out via my GitHub information.
+my git hub information
 
 # Contributors
-Just me
+None
 
 # Acknowledgements
-My full stack web dev class and instructional staff
+My web dev class
