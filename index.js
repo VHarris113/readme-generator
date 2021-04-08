@@ -1,9 +1,9 @@
 // TODO: Include packages needed for this application
-const markdown = require('./utils/generateMarkdown');
+// const markdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
-const license = require('license');
-const util = require('utils');
+// const license = require('license');
+// const util = require('utils');
 // TODO: Create an array of questions for user input
 const generateReadme = (answers) => `
 # Title: ${answers.title}
@@ -43,7 +43,7 @@ ${answers.support}
 ${answers.contributors}
 
 # Acknowledgements
-${answers.acknowlegements}
+${answers.acknowledgements}
 `;
 
 inquirer
@@ -126,7 +126,7 @@ inquirer
 
     .then((answers) => {
         const readmePageContent = generateReadme(answers);
-        fs.writeToFile('README.md', readmePageContent, err => 
+        fs.writeFile('README.md', readmePageContent, err => 
         err ? console.log(err) : console.log("Congratulations! Your README is now complete!")
     )});
 
