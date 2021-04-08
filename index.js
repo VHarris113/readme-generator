@@ -5,7 +5,7 @@ const fs = require('fs');
 const license = require('license');
 // TODO: Create an array of questions for user input
 const generateReadme = (answers) => `
-# Title: ${answers.title}
+#${answers.title}
 
 # Description
 ${answers.description}
@@ -30,7 +30,7 @@ ${answers.production}
 ${answers.languages}
 
 # License
-![badge](${answers.license})
+![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
 
 # Future Project Releases
 ${answers.future}

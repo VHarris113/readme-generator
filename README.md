@@ -1,5 +1,5 @@
 
-# Title: Readme Generator
+# Title:
 
 # Description
 It generates new readmes
