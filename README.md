@@ -1,38 +1,39 @@
 
-# Title: m
+# Title: ReadMe Generator
+
 # Description
-m
-m
+It generates a readme for those who created a new application. This will quicken the process of creating the app without having to worry about writing out the entire thing.
+![answers.title](okay);
 
 # Repo Link
-m
+[Repo](https://github.com/VHarris113/readme-generator.git)
 
 # Deployed Site Link
-m
+[Website](N/A)
 
 # How to Use It
-m
+You just answer the prompts accordingly.
 
 # Installation
-m
+git clone git@github.com:VHarris113/readme-generator.git
 
 # Production
 Yes
 
 # Languages
-HTML
+JavaScript
 
 # License
-Yes
+![badge](ISC)
 
 # Future Project Releases
-n
+No
 
 # Support Information
-n
+Please email me or reach out via my GitHub information.
 
 # Contributors
-n
+Just me
 
 # Acknowledgements
-n
+My full stack web dev class and instructional staff

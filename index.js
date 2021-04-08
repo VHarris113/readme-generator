@@ -2,8 +2,7 @@
 const markdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const license = require('license');
-// const util = require('utils');
+const license = require('license');
 // TODO: Create an array of questions for user input
 const generateReadme = (answers) => `
 # Title: ${answers.title}
@@ -141,5 +140,5 @@ inquirer
 //         const answers = await questions();
 //     }
 // }
-// // Function call to initialize app
+// Function call to initialize app
 // init();
