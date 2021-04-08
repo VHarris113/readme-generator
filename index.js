@@ -128,17 +128,3 @@ inquirer
         fs.writeFile('README.md', readmePageContent, err => 
         err ? console.log(err) : console.log("Congratulations! Your README is now complete!")
     )});
-
-// TODO: Create a function to write README file
-
-
-// const writeFileAsync = util.promisify(writeToFile)
-
-// // // TODO: Create a function to initialize app
-// function init(); {
-//     try {
-//         const answers = await questions();
-//     }
-// }
-// Function call to initialize app
-// init();
