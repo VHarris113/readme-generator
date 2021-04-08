@@ -1,5 +1,5 @@
 // TODO: Include packages needed for this application
-// const markdown = require('./utils/generateMarkdown');
+const markdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
 // const license = require('license');
@@ -10,13 +10,13 @@ const generateReadme = (answers) => `
 
 # Description
 ${answers.description}
-${answers.picture}
+![answers.title](${answers.picture});
 
 # Repo Link
-${answers.repo}
+[Repo](${answers.repo})
 
 # Deployed Site Link
-${answers.link}
+[Website](${answers.link})
 
 # How to Use It
 ${answers.steps}
@@ -31,7 +31,7 @@ ${answers.production}
 ${answers.languages}
 
 # License
-${answers.license}
+![badge](${answers.license})
 
 # Future Project Releases
 ${answers.future}
@@ -61,7 +61,7 @@ inquirer
         {
             type: 'input',
             name: 'picture',
-            message: 'Do you have a picture or video link to your app?'
+            message: 'Please add a link to a picture or video of your app in use.'
         },
         {
             type: 'input',
@@ -98,8 +98,8 @@ inquirer
         {
             type: 'list',
             name: 'license',
-            message: 'Do you have a license for this app?',
-            choices: ['Yes', 'No'],
+            message: 'Choose the correct license for this app:',
+            choices: ['ISC', 'MIT', 'Mozilla', 'Open'],
         },
         {
             type: 'input',
@@ -119,7 +119,7 @@ inquirer
         {
             type: 'input',
             name: 'support',
-            message: 'Any support contact information?',
+            message: 'Please list all support information for the app.',
         }
     ])
 
