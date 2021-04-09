@@ -3,6 +3,7 @@ const markdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
 const license = require('license');
+const { inherits } = require('util');
 // TODO: Create an array of questions for user input
 const generateReadme = (answers) => `
 #${answers.title}
@@ -30,7 +31,7 @@ ${answers.production}
 ${answers.languages}
 
 # License
-![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+${answers.license}
 
 # Future Project Releases
 ${answers.future}
@@ -83,10 +84,9 @@ inquirer
             message: 'What do you use to install it?',
         },
         {
-            type: 'list',
+            type: 'input',
             name: 'production',
-            message: 'Is production complete for your app?',
-            choices: ['Yes', 'No'],
+            message: 'Please write out of production has concluded or an ETA for the finished product.',
         },
         {
             type: 'checkbox',
@@ -98,7 +98,7 @@ inquirer
             type: 'list',
             name: 'license',
             message: 'Choose the correct license for this app:',
-            choices: ['ISC', 'MIT', 'Mozilla'],
+            choices: ['ISC', 'MIT', 'Mozilla', 'None'],
         },
         {
             type: 'input',
