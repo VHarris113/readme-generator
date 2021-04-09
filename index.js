@@ -1,10 +1,7 @@
-// TODO: Include packages needed for this application
 const markdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
-const license = require('license');
-const { inherits } = require('util');
-// TODO: Create an array of questions for user input
+
 const generateReadme = (answers) => `
 #${answers.title}
 
@@ -31,7 +28,7 @@ ${answers.production}
 ${answers.languages}
 
 # License
-${answers.license}
+${markdown.renderLicenseBadge(answers.license)}
 
 # Future Project Releases
 ${answers.future}

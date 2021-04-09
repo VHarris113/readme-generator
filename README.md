@@ -1,39 +1,39 @@
 
-#ReadME Generator
+#b
 
 # Description
-My app generates a ReadMe file for all users whenever they need to create a new one for whatever project or app they
-![answers.title](https://github.com/VHarris113/readme-generator/blob/41abbf6615e2ec7e88717b7fa187a5a2136a094f/gif/howtoreadme.gif);
+b
+![answers.title](b);
 
 # Repo Link
-[Repo](https://github.com/VHarris113/readme-generator)
+[Repo](b)
 
 # Deployed Site Link
-[Website](https://vharris113.github.io/readme-generator/)
+[Website](b)
 
 # How to Use It
-Clone the repository and then once you open your terminal, enter in "node index.js" and answer the prompts.
+b
 
 # Installation
-Use the "git clone" feature of the GitHub repo.
+b
 
 # Production
-Yes
+b
 
 # Languages
-HTML,JavaScript
+
 
 # License
-ISC
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 # Future Project Releases
-No
+b
 
 # Support Information
-Please contact me through the GitHub information provided.
+b
 
 # Contributors
-Veronica Harris
+b
 
 # Acknowledgements
-The 2021 Full Stack Web Development Cohort
+b
