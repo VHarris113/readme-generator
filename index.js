@@ -3,43 +3,57 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 const generateReadme = (answers) => `
-#${answers.title}
+## Title:${answers.title}
 
-# Description
+##Table of Contents
+- [Description](#description)
+- [Repository](#repository)
+- [Website](#website)
+- [Usage](#usage)
+- [Installation](#installation)
+- [Production](#production)
+- [Languages](#language)
+- [License](#license)
+- [Releases](#release)
+- [Support](#support)
+- [Contributors](#contributors)
+- [Acknowledgements](#acknowledgements)
+
+## Description
 ${answers.description}
 ![answers.title](${answers.picture});
 
-# Repo Link
+## Repository
 [Repo](${answers.repo})
 
-# Deployed Site Link
+## Website
 [Website](${answers.link})
 
-# How to Use It
+## Usage
 ${answers.steps}
 
-# Installation
+## Installation
 ${answers.installation}
 
-# Production
+## Production
 ${answers.production}
 
-# Languages
+## Languages
 ${answers.languages}
 
-# License
+## License
 ${markdown.renderLicenseBadge(answers.license)}
 
-# Future Project Releases
+## Releases
 ${answers.future}
 
-# Support Information
+## Support
 ${answers.support}
 
-# Contributors
+## Contributors
 ${answers.contributors}
 
-# Acknowledgements
+## Acknowledgements
 ${answers.acknowledgements}
 `;
 

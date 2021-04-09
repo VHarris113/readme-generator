@@ -1,39 +1,53 @@
 
-#b
+## Title:ReadME Generator
 
-# Description
-b
-![answers.title](b);
+##Table of Contents
+- [Description](#description)
+- [Repository](#repository)
+- [Website](#website)
+- [Usage](#usage)
+- [Installation](#installation)
+- [Production](#production)
+- [Languages](#language)
+- [License](#license)
+- [Releases](#release)
+- [Support](#support)
+- [Contributors](#contributors)
+- [Acknowledgements](#acknowledgements)
 
-# Repo Link
-[Repo](b)
+## Description
+The ReadMe Generator generates a fully completed ReadMe for any user. This will allow for ease of creation and lessen time consuming practices of making a ReadMe after a large project is nearing completion.
+![answers.title](https://github.com/VHarris113/readme-generator/blob/41abbf6615e2ec7e88717b7fa187a5a2136a094f/gif/howtoreadme.gif);
 
-# Deployed Site Link
-[Website](b)
+## Repository
+[Repo](https://github.com/VHarris113/readme-generator)
 
-# How to Use It
-b
+## Website
+[Website](https://vharris113.github.io/readme-generator/)
 
-# Installation
-b
+## Usage
+You make a clone of the repository from the above links. Once completed, you open up to the index.js page and then open your terminal. Once there, you then type in "node index.js" into your terminal. This will activate prompts for you to follow to complete the process.
 
-# Production
-b
+## Installation
+git clone git@github.com:VHarris113/readme-generator.git
 
-# Languages
+## Production
+Production has concluded on this ReadMe Generator.
 
+## Languages
+HTML,JavaScript
 
-# License
+## License
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-# Future Project Releases
-b
+## Releases
+Project is completed.
 
-# Support Information
-b
+## Support
+Please find me on Github.com as VHarris113. I will answer all questions there.
 
-# Contributors
-b
+## Contributors
+No contributions.
 
-# Acknowledgements
-b
+## Acknowledgements
+Thanks to my friend and tutor, Danielle Martin for assisting me. As well as the 2021 Full Stack Web Dev Cohort and Instructional Staff.
