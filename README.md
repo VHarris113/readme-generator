@@ -19,6 +19,8 @@
 The ReadMe Generator generates a fully completed ReadMe for any user. This will allow for ease of creation and lessen time consuming practices of making a ReadMe after a large project is nearing completion.
 ![answers.title](https://github.com/VHarris113/readme-generator/blob/41abbf6615e2ec7e88717b7fa187a5a2136a094f/gif/howtoreadme.gif);
 
+[Link to How-To](https://drive.google.com/file/d/1-cSbFAX5m9eudxjAy9yGm_5tfFtMxCp4/view?usp=sharing)
+
 ## Repository
 [Repo](https://github.com/VHarris113/readme-generator)
 
